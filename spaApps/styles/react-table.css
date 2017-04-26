@@ -1,0 +1,212 @@
+html {
+  min-height: 100vh;
+}
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+	padding: 20px;
+}
+h1 {
+  font-size: 2.5em;
+}
+a {
+  color: #02bfe6;
+  font-weight: bold;
+  text-decoration: none;
+}
+strong {
+  font-weight: bold;
+}
+.logo {
+  width: 400px;
+  max-width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.FormInput {
+  display: inline-block;
+}
+form > div {
+  margin-bottom: 1em;
+}
+h6 {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+label {
+  display: block;
+}
+radiogroup {
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: inline-block;
+  border-radius: 3px;
+}
+input,
+textarea,
+select {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 2px;
+}
+.FormInput.-error input,
+.FormInput.-error textarea,
+.FormInput.-error select {
+  border-color: #f00;
+}
+.FormError {
+  color: #f00;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px;
+}
+em {
+  font-style: italic;
+}
+.nested {
+  padding: 10px;
+}
+.nested > div {
+  background: rgba(0,0,0,0.05);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.form_wrapper{
+	padding: 20px;
+}
+
+.react-resizable{
+  max-width: 100%;
+}
+.timeCls{
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+     font-family: "Helvetica", arial, sans-serif;
+    font-size: 150px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:10px;
+    display: flex;    
+    
+   
+    justify-content: center;
+}
+
+.popUp__active {
+    position: absolute;
+    width: 500px;
+    height:300px;
+    margin: auto;
+    left: 40%;
+    top: 30%;
+    background-color: lavender;
+    box-shadow: 10px 5px 5px black; 
+}
+.popUp__not__active{
+     display: none;
+}
+
+.popupTitle{
+  margin-top: 2px;
+  display: flex;  
+  margin: 15px;
+    
+ }
+ .popupTitle span{
+   width: 350px;
+   font-size: 18px;
+ }
+
+.clsPopupBtn {
+     color: red;
+     cursor: pointer;     
+     position: absolute;
+     margin-left: 465px;
+}
+.popupform{
+    margin: 14px;
+}
+.fldRow{
+  width: 150px;
+  display: inline-flex;
+}
+.btn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btnfields{
+  display: flex;
+  flex-direction: row;
+  margin-top: 16%;
+  margin-left: 15px;
+}
+
+/* слой затемнения */
+.dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/* активируем слой затемнения и модальное окно */
+.dm-overlay:target {
+    display: block;
+/* анимация и время задержки */
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+/* блочная таблица */
+.dm-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+/* ячейка блочной таблицы */
+.dm-cell {
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+/* модальный блок */
+.dm-modal {
+    display: inline-block;
+    padding: 20px;
+/* максимально возможная ширина */
+    max-width: 50em;
+    background: #607d8b;
+/* внешняя тень блока */
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #cfd8dc;
+    text-align: left;
+/* анимация и время задержки */
+    -webkit-animation: fade .8s;
+    -moz-animation: fade .8s;
+    animation: fade .8s;
+}

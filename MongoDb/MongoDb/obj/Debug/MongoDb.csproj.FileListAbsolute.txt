@@ -1,0 +1,16 @@
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDb.exe.config
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDb.exe
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDb.pdb
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDB.Bson.dll
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDB.Driver.Core.dll
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDB.Driver.dll
+D:\toGit\MongoDb\MongoDb\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDB.Bson.xml
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDB.Driver.xml
+D:\toGit\MongoDb\MongoDb\bin\Debug\MongoDB.Driver.Core.xml
+D:\toGit\MongoDb\MongoDb\obj\Debug\MongoDb.csprojResolveAssemblyReference.cache
+D:\toGit\MongoDb\MongoDb\obj\Debug\MongoDb.exe
+D:\toGit\MongoDb\MongoDb\obj\Debug\MongoDb.pdb
+D:\toGit\ReactTable&AspNetApi\MongoDb\MongoDb\bin\Debug\MongoDb.exe.config
+D:\toGit\ReactTable&AspNetApi\MongoDb\MongoDb\obj\Debug\MongoDb.exe
+D:\toGit\ReactTable&AspNetApi\MongoDb\MongoDb\obj\Debug\MongoDb.pdb
