@@ -1,4 +1,4 @@
-html {
+﻿html {
   min-height: 100vh;
 }
 body {
@@ -91,7 +91,7 @@ em {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
      font-family: "Helvetica", arial, sans-serif;
-    font-size: 150px;
+    font-size: 5em;
     border:1px solid #ecf0f1;
     background:#ecf0f1;
     padding:10px;
@@ -103,13 +103,13 @@ em {
 
 .popUp__active {
     position: absolute;
-    width: 500px;
-    height:300px;
+    width: 20em;
+    height: 35em;
     margin: auto;
-    left: 40%;
-    top: 30%;
+    left: 3em;
+    top: 2em;
     background-color: lavender;
-    box-shadow: 10px 5px 5px black; 
+    box-shadow: 10px 5px 5px black;
 }
 .popUp__not__active{
      display: none;
@@ -121,17 +121,16 @@ em {
   margin: 15px;
     
  }
- .popupTitle span{
-   width: 350px;
-   font-size: 18px;
+ .popupTitle span{  
+   font-size: 2em;
  }
 
 .clsPopupBtn {
      color: red;
-     cursor: pointer;     
-     position: absolute;
-     margin-left: 465px;
-}
+     cursor: pointer;  
+  } 
+
+
 .popupform{
     margin: 14px;
 }
@@ -150,63 +149,14 @@ em {
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
+    width: 200px;
 }
 
 .btnfields{
-  display: flex;
-  flex-direction: row;
-  margin-top: 16%;
-  margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 16%;
+    margin-left: 3px;
+    flex-wrap: wrap;
 }
 
-/* слой затемнения */
-.dm-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.65);
-    display: none;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-}
-/* активируем слой затемнения и модальное окно */
-.dm-overlay:target {
-    display: block;
-/* анимация и время задержки */
-    -webkit-animation: fade .6s;
-    -moz-animation: fade .6s;
-    animation: fade .6s;
-}
-/* блочная таблица */
-.dm-table {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-/* ячейка блочной таблицы */
-.dm-cell {
-    display: table-cell;
-    padding: 0 1em;
-    vertical-align: middle;
-    text-align: center;
-}
-/* модальный блок */
-.dm-modal {
-    display: inline-block;
-    padding: 20px;
-/* максимально возможная ширина */
-    max-width: 50em;
-    background: #607d8b;
-/* внешняя тень блока */
-    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
-    color: #cfd8dc;
-    text-align: left;
-/* анимация и время задержки */
-    -webkit-animation: fade .8s;
-    -moz-animation: fade .8s;
-    animation: fade .8s;
-}
