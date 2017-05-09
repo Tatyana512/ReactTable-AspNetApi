@@ -16,29 +16,10 @@ namespace ApiTestData.Models
             _dateTime = datetime;
         }
         public Guid Id { get { return _id; } set { _id = value; } }
-        public string Name { get { return _name; } set { _name = value;  } }
-        public int Count { get { return _count; }  set { _count = value;  } }
-        public DateTime DateTime { get { return _dateTime;  } set { _dateTime = value; } }
+        public string Name { get { return _name; } set { _name = value; } }
+        public int Count { get { return _count; } set { _count = value; } }
+        public DateTime DateTime { get { return _dateTime; } set { _dateTime = value; } }
     }
-
-    //public class ItemMongo
-    //{
-    //    public Guid _guidid;
-    //    public string _name;
-    //    public int _count;
-    //    public DateTime _dateTime;
-    //    public ItemMongo(Guid id, string name, int count, DateTime datetime)
-    //    {
-    //        _guidid = id;
-    //        _name = name;
-    //        _count = count;
-    //        _dateTime = datetime;
-    //    }
-    //    public Guid GuidId { get { return _guidid; } set { _guidid = value; } }
-    //    public string Name { get { return _name; } set { _name = value; } }
-    //    public int Count { get { return _count; } set { _count = value; } }
-    //    public DateTime DateTime { get { return _dateTime; } set { _dateTime = value; } }
-    //}
 
     [BsonIgnoreExtraElements]
     public class ItemToSave
@@ -48,7 +29,5 @@ namespace ApiTestData.Models
         public int Count;
         public DateTime DateTime;
     }
-
-
 
 }

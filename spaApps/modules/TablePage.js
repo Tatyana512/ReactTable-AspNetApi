@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import {connect} from 'react-redux'
 import ReactTable from 'react-table'
 import PopUp from './PopUp'
 import helper from './../helper'

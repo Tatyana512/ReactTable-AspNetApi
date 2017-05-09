@@ -1,11 +1,7 @@
-﻿using ApiTestData.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace ApiTestData
+﻿namespace ApiTestData
 {
+    using ApiTestData.Models;
+    using System.Collections.Generic;
     public abstract class ItemsRepository
     {
         public abstract IList<Item> GetAllItems();

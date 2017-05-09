@@ -1,8 +1,8 @@
-﻿
-namespace ApiTestData
-{
-    using System.Web.Mvc;
+﻿using System.Web;
+using System.Web.Mvc;
 
+namespace apiTestData
+{
     public class FilterConfig
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)

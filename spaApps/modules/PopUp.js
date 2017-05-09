@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import {connect} from 'react-redux'
 import helper from './../helper'
 
 class PopUp extends Component {

@@ -11,26 +11,7 @@ namespace ApiTestData
         {
             try
             {
-                Item _result = null;
-                const string databaseName = @"D:\cyber.db";
-                SQLiteConnection connection =
-                    new SQLiteConnection(string.Format("Data Source={0};", databaseName));
-                SQLiteCommand command =
-                      new SQLiteCommand($"SELECT * FROM example WHERE id='{id}'", connection);
-                connection.Open();
-                SQLiteDataReader sqReader = command.ExecuteReader();
-                try
-                {
-                    while (sqReader.Read())
-                    {
-                        _result = DataTransform.ToItem(sqReader);
-                    }
-                }
-                finally
-                {
-                }
-                connection.Close();
-                return _result;
+                return null;
             }
             catch(Exception exc)
             {
@@ -40,18 +21,19 @@ namespace ApiTestData
 
         public override bool CreateItem(Item item)
         {
-           try
+            return false;
+            try
             {
-                const string databaseName = @"D:\cyber.db";                              
+                const string databaseName = @"D:\cyber.db";
                 SQLiteConnection connection =
                     new SQLiteConnection(string.Format("Data Source={0};", databaseName));
-                var command = new SQLiteCommand($"INSERT INTO 'example' ('id', 'name', 'count', 'date') VALUES ('{item.Id}', '{item.Name}', {item.Count}, '{item.DateTime}' );", connection);               
+                var command = new SQLiteCommand($"INSERT INTO 'example' ('id', 'name', 'count', 'date') VALUES ('{item.Id}', '{item.Name}', {item.Count}, '{item.DateTime}' );", connection);
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();
                 return true;
             }
-            catch(Exception exc)
+            catch (Exception exc)
             {
                 throw new Exception(exc.Message);
             }
@@ -59,6 +41,7 @@ namespace ApiTestData
 
         public override bool DeleteItem(string guid)
         {
+           
             try
             {
                 const string databaseName = @"D:\cyber.db";
@@ -71,7 +54,7 @@ namespace ApiTestData
                 connection.Close();
                 return true;
             }
-            catch(Exception exc)
+            catch (Exception exc)
             {
                 throw new Exception(exc.Message);
             }
@@ -99,7 +82,7 @@ namespace ApiTestData
         public override IList<Item> GetAllItems()
         {
             var _items = new List<Models.Item>();
-            const string databaseName = @"D:\cyber.db";
+            const string databaseName = @"C:\sqlite\cyber.db";
             SQLiteConnection connection =
                 new SQLiteConnection(string.Format("Data Source={0};", databaseName));
             SQLiteCommand command =
